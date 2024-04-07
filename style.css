@@ -1,0 +1,110 @@
+/*imp! CSS VARIABLE DECLARATION */
+
+:root{
+    --pure-white: #fff;
+    --main-bg: #f9f9f9;
+    --aqua-green: #359381;
+    --shadow: rgba(0,0,0,0.2);
+    --dark-green: #003329;
+}
+
+/*imp! FONT IMPORT AND CSS RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*imp! BODY CSS */
+
+body {
+    background: var(--main-bg);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*imp! HEADER CSS */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--aqua-green);
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--aqua-green);
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background: var(--aqua-green);
+    color: var(--pure-white);
+}
+
+/*imp! PARALLAX SECTION CSS */
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    font-size: 5em;
+    color: var(--pure-white);
+    text-shadow: 2px 2px 4px var(--shadow);
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+/*imp! TEXT SECTION CSS */
+
+.text-section{
+    position: relative;
+    background-color: var(--dark-green);
+    padding: 100px;
+}
+
+.text-section h2{
+    font-size: 3rem;
+    color: var(--pure-white);
+    margin-bottom: 10px;
+}
+
+.text-section p{
+    font-size: 1rem;
+    color: var(--pure-white);
+    font-weight: 300;
+}
